@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:soket_test/app/pages/chat/chatBindings.dart';
+import 'package:soket_test/app/pages/slider/sliderBindings.dart';
 import 'package:soket_test/app/routes/appPages.dart';
 
 void main() {
@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.fadeIn,
-      initialBinding: ChatBixndings(),
+      initialBinding: SliderBindings(),
       getPages: AppPages.pages,
+      initialRoute: Routes.Slider,
     );
   }
 }
